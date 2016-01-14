@@ -1,0 +1,306 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 14/12/2015, 17:17:56
+    Author     : Ronald
+*/
+
+body{
+    background: url("../img/fondo.png") no-repeat fixed center  ;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;  
+    margin: 0
+}
+
+/*-------------------------------Barra de Sesión---------------------------*/
+.barraini{
+    background: black;
+    position: fixed;
+    height: 45px; width: 1350px;
+    top: 0 ; left: 0;
+    z-index: 10
+}
+
+.psesion{
+    float: right;
+    margin: 14px 10px ;
+    padding-right: 20px;
+    color: #BFBFBF;
+    font-size: 14px;
+    line-height: 14px;
+    font-family: cursive;
+    font-weight: bold;
+    border-right: 1px white solid  
+}
+.psesion:first-child {
+    border-right: none;
+    margin-right: 50px;  
+}
+.sesion{
+    font-size: 14px;
+    line-height: 14px;
+    font-family: cursive;
+    font-weight: bold;
+}
+
+/*-------------------------Encabezado-----------------*/
+#fondo{
+    background: url("../img/fond.jpg") no-repeat fixed center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin: 45px 130px 15px; position: relative; top: 0; box-shadow: 0 0 10px black; 
+}
+
+.imgini{
+    float: left;
+    margin: 20px 35px ; height: 140px  ; width:400px;
+    
+}
+
+h1{
+    padding: 42.8px 70px;
+    text-align: center;
+    margin-top: 0
+}
+
+
+/*----------------------Menu-----------------------*/
+header nav{
+        background:#333;
+        background-image: -webkit-linear-gradient(bottom, #1B1B1B 10%, #363636 55%, #1B1B1B 78%);
+        box-shadow: 0 0 10px #000;
+        font-size: 14px;
+        text-transform:uppercase;
+        border-top:1px solid #000;         
+        height: 40px;       
+}
+header nav ul{
+    list-style: none;
+    margin: 0px auto;
+    width: 825px;
+    padding: 0px
+}
+nav ul li:hover > ul {
+    display:block;
+}
+header nav ul li{
+    border-right: 1px solid #181818; 
+    float:left;
+    padding: 12px 15px;
+    position: relative
+}
+header nav ul li:hover{
+    background: url("../img/fondorange.jpg") center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+header nav ul li:last-child {
+    border-right: none;
+}
+header nav ul li ul{
+    background: url("../img/fondorange.jpg") center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin: 0;
+    width: 167px; height: 78px;
+    display: none;
+    position: absolute;
+    top: 40px; left: 0 
+}
+header nav ul li:hover ul {
+    display:block;   
+}
+header nav ul li ul li{
+    border-right: none; 
+    padding: 11px 0; 
+    border-top: 1px solid darkorange;
+    margin: 0 12px
+}
+header nav ul li ul li:hover{
+    background: none; 
+}
+
+header nav ul li a{
+    text-align: center; font-weight:bold; color: #9B9B9B; padding: 0 25px; line-height: 5px;
+}
+a {color: #92DAF4;text-decoration: none; margin: auto}
+a:hover, a:active {color: #fff;text-decoration: none;}
+
+header nav ul li ul li a{
+    text-align: right;
+    padding-right: 53px
+}
+#a{
+    padding-right: 70px
+}
+label{
+    text-align: center; font-weight:bold; color: #9B9B9B; padding: 0 25px; line-height: 5px;
+}
+label:hover {
+    color: #fff
+}
+
+/*---------------------Pagina de Inicio----------------------*/
+
+section{
+    margin: 0 auto;
+    width: 880px
+}
+
+h2{
+    font-size: 34px;
+    font-family: fantasy;
+    margin-bottom: 0;
+}
+
+#contenedor{
+    border: 1px white solid ;
+    border-radius: 5px;
+    width: 880px ; height: 204px;
+    margin: 0 auto ;
+}
+
+#nombrevento{
+    position: absolute;
+    bottom: 6px;
+    width: 169px; height: 25px;
+    padding: 5px 0;
+    text-align: center; color: white;
+    border: 1px orange solid;
+    background: #333 
+}
+
+.enlace{
+    display: block;
+    position: relative;
+    float: left;
+    padding: 7px 0 7px 4px; 
+    height: 190px;
+    
+}
+
+.even:hover {
+    box-shadow: 0 0 10px cornflowerblue ;
+}
+.enlace:first-child {
+    padding-left: 7px
+}
+.even{
+    width: 170px; height: 190px;
+    border-radius: 5px 5px 0 0;   
+}
+
+/*-----------------------Pagina de Perfil--------------------------*/
+
+#section{
+    width: 970px
+}
+
+#perfil{
+    background: url("../img/perf.png");
+    width: 390px;
+    border-radius: 10px;
+    margin: 50px 0;
+    box-shadow: 0 0 10px #000 ;
+    float: left;
+    border: 1px orange solid 
+}
+
+.titulo{
+    font-size: 24px;
+    font-weight: 700 ;
+    padding: 0;
+    margin: 10px;
+    text-align: center;
+    font-family: fantasy;
+    letter-spacing: 0.03em
+}
+
+#imgperfil{
+    margin: 5px 104px 10px;
+    width: 180px; height: 200px;
+    border: 2px #F5B36C solid;
+    box-shadow: 0 0 10px #333;
+}
+
+.datosperfil{
+    margin: 20px 35px 0;
+    font-size: 18px;
+    font-family: cursive;
+    font-weight: bolder ;
+    color:#491F1D
+}
+
+hr{
+    border-color: orange;
+    width: 355px;
+    box-shadow: 0 0 10px #333;
+}
+
+#btneditar{
+   background: url(../img/imgboton.jpg);
+   margin: 20px 144.5px 20px; 
+   width: 100px ; height: 25px; 
+   border-radius: 3px;
+   box-shadow: 0 0 10px black;
+   border: 1px solid darkgreen
+}
+
+.nombre{
+    font-size: 17px;
+    font-family: cursive;
+    font-weight: 500;
+    color: black
+}
+
+#miseventos{
+    padding-top: 45px; 
+    height: 700px;
+    margin-left: 440px
+}
+
+.miseventos{
+    font-size: 18px;
+    padding: 0;
+    margin: 10px;
+    text-align: center;
+    font-family: fantasy;
+    letter-spacing: 0.03em
+}
+
+
+/*------------------------Pie de Pagina------------------*/
+.barrafin{
+    background: black;
+    position: relative;
+    height: 40px;
+    margin: 0
+}
+
+.derechos{
+    color: whitesmoke;
+    float: left;
+    margin: 11px 20px;
+    font-size: small
+}
+
+.redessociales{
+    float: right;
+    width: 30px; height: 30px;
+    margin: 4px 6px
+}
+
+.cajaderedes{
+    margin: 0 70px
+}

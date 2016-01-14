@@ -1,6 +1,16 @@
-var http = require('http')
-var port = process.env.PORT || 1337;
-http.createServer(function(req, res) {
-  res.writeHead(200, { 'Content-Type': 'text/plain' });
-  res.end('Hello World\n');
-}).listen(port);
+'use strict'
+const http = require('http')
+const rutas = require('./rutas')
+
+const server = http.createServer()
+const port = process.env.PORT || 8080
+
+
+server.on('request',rutas)
+server.on('listening',onListening)
+
+server.listen(port)
+
+function onListening(){
+     console.log(`Server running in port ${port}`)
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Terra4x4</title>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        <link href="CCS/Home.css" rel="stylesheet" type="text/css"/>
+        <script src="js/jquery.js" type="text/javascript"></script>
+        <script src="js/inicioCl.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <header class="encabezado">
+            <div id="menu">
+                <div class="admi">
+                    <div class="admi2">
+                        <a class="link" href="pagAdministrador/sesionAdmi.html">
+                            <span class="imag"><img id="imgkeys" src="img/animated-key-image-0016.gif" alt=""/></span>                        
+                            <span class="letter">ADMINISTRADOR</span>
+                        </a>                    
+                    </div>
+                </div>
+            </div>
+            <div class="desplegable">
+                <a class="linkdesple" href="#"></a>
+            </div>  
+        </header>  
+        <section id="logopag">
+            <img id="terra" src="img/LogoTerra.png" alt=""/>
+        </section>
+        <section id="inicio">           
+            <article class="formulario">                              
+                <form>                      
+                    <div id="loguin">
+                        <h3 class="legend">Login</h3>
+                        <table class="tabla">
+                            <tr>                                           
+                                <td class="iniciar">
+                                    <input type='text' id='txtnombre' placeholder="Usuario" class="entrada"/>                                   
+                                </td>
+                             </tr>
+                             <tr>                                           
+                                <td class="iniciar">                                   
+                                    <input type='password' id='txtcontra' placeholder="Contraseña" class="entrada"/>
+                                </td>
+                             </tr>
+                             <tr>
+                                 <td class="iniciar">
+                                     <input type="button" value="Ingresar" id="btniniciosecion" class="btn" />           
+                                </td>
+                             </tr>
+                        </table>
+                    </div>     
+                </form>
+                <form >
+                    <div id="registro">
+                        <h3 class="legend">Registro</h3>
+                        <p class="p" id="par">Eres nuevo!! Registrate en Terra</p>
+                        <div class="tabla">
+                            <input type='text' id='txtnombres' required maxlength='15' placeholder='Nombre' class="entrada"/><br>
+                            <input type='text' id='txtapellidos' required maxlength='15' placeholder="Apellidos" class="entrada"/><br>
+                            <input type='date' id='txtnacimiento' min='1990-01-01' placeholder="Fecha de Nacimiento" max='2025-01-01' required class="entrada" /><br>
+                            <input type='email' id='txtcorreo' placeholder='Correo' required class="entrada"/><br>
+                            <input type='password' id='pass' placeholder="Contraseña" class="entrada"/><br>
+                            <input type='hidden' id='FechaActual' name="fecha"/>
+                            <input type='submit' id="btnregistro" value='Registrese' class="btn" />
+                        </div>
+                    </div>
+                </form>                   
+            </article>
+            <article class="contenedor">
+                <table>
+                    <tr>
+                        <h1>Bienvenidos a Terra 4x4</h1>
+                        <p class="p1">Registrese, inscribase y participe en los eventos de 4x4 y Motocros!</p> <br>      
+                        <p class="p1">y enterese de nuestras ofertas todos los dias!</p>
+                    </tr>            
+                    <tr><img src="img/logoini_1.jpg" class="imginicio"></tr>
+                </table>
+            </article>
+       </section>
+       
+       <div class="piedepag">
+           <div class="hr">
+               <p class="p"> Si desea saber mas sobre las carreras registrese en nuestra pagina</p>  
+               <hr>              
+               <big><b><i><a href="pagCliente/acerca.html">Acerca de</a></i></b></big>
+               <div class="derechos"> 
+                   Derechos Reservados Uleam-Facci &copy; 2015-2016  
+               </div>           
+           </div>
+       </div>
+    </body>
+    
+</html>

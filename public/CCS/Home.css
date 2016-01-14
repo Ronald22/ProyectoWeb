@@ -1,0 +1,333 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 10/12/2015, 13:02:54
+    Author     : Ronald 
+*/
+
+body {
+    background: url("../img/fond.jpg") no-repeat fixed center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.encabezado{
+    background: #363839;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    width: 1353px;
+    margin-left: auto;
+    margin-right: auto; 
+    z-index: 10;
+}
+
+
+#menu{
+    padding: 25px 30px 25px 30px;
+    height: 33px;
+    overflow: hidden;
+    position: relative;
+    z-index: 3;
+    display: none;
+   
+}
+
+.admi{
+    margin-left: auto; margin-right: auto; max-width: 250px;
+}
+.admi2{
+    clear: both;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.link{
+    padding-left: 20px; padding-right: 20px; padding-top: 9px; padding-bottom: 9px;
+    font-size: 12px; line-height: 14px; font-family: cursive; font-weight:bold;
+    text-decoration: none; color: #BFBFBF;
+    display: inline-block;
+    position: relative;  
+    border-width: 0;
+    border-style: solid;
+}
+.link:hover{
+    color: #F5B36C
+}
+.imag{
+    padding: 0 10px; line-height: normal; left: 0;
+    border-right: 1px solid; display: inline-block;
+    position: absolute;
+    top: 0;
+    height: 100%;
+}
+
+#imgkeys{
+    width: 12px;
+    height: 15px;
+    top: 50%;
+    margin-top: -6px;
+    display: block;
+    position: relative;
+}
+
+.letter{
+    padding-left: 32px; line-height: normal;
+}
+
+.desplegable{
+    position: absolute;
+    right: 0px;
+    border-top: 35px solid transparent;
+    border-left: 35px solid transparent;
+}
+
+.desplegable:hover{ 
+    position: absolute;
+    right: 0px;    
+    border-top: 35px solid #363839;
+    border-left: 35px solid transparent;
+}
+
+.linkdesple:hover:after{
+    font-size: 17px;
+    font-family: "icomoon";
+    content: '\e600';
+    -webkit-font-smoothing: antialiased;
+    display: block;
+    position: absolute;
+    left: -20px;
+    top: -34px;
+    color: #fff;
+    text-shadow: none;
+}
+
+.open:hover:after{
+    content: '\e601';
+    -webkit-font-smoothing: antialiased;
+}
+.linkdesple:after {
+    font-size: 17px;
+    font-family: "icomoon";
+    content: '\e600';
+    -webkit-font-smoothing: antialiased;
+    display: block;
+    position: absolute;
+    left: -20px;
+    top: -34px;
+    color: transparent;
+    text-shadow: none;
+}
+
+.open:after{
+    content: '\e601';
+    -webkit-font-smoothing: antialiased;
+    color: transparent;
+}    
+
+#terra{
+    position: absolute;
+    top: -39px ; right: 149px ;
+    border-radius: 8px;    
+    width: 600px ; height: 300px ;
+    z-index: 5
+}
+#inicio{
+    background: url("../img/fondo.png") no-repeat ;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    border-radius: 5px;
+    box-shadow: 0 0 10px black;   
+    margin-top: 170px;
+    position: relative;
+    z-index: 5;
+}
+
+.formulario{
+   float: right;
+   margin-top: 21px;
+   margin-right: 25px;
+   width: 35%;
+       
+}
+.entrada{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    width: 280px; height: 30px; 
+    font-size: 15px; font-family: inherit;
+    border: 1px solid #CCD6DD;
+    border-radius: 3px;
+    padding: 0 5px;
+}
+
+.entrada:focus{
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.05) inset, 0px 0px 8px rgba(82, 168, 236, 0.6);
+}
+
+
+.btn{
+   background: url(../img/imgboton.jpg);
+   margin-left: 87.5px;
+   margin-right: 87.5px;
+   width: 100px ; height: 33px; 
+   margin-top: 10px;
+   border-radius: 3px;
+   box-shadow: 0 0 10px black;
+   border: 1px solid darkgreen
+}
+
+#loguin{
+    margin-left: 20px;
+    border-radius: 5px ; 
+    background: url("../img/dasd.jpg") no-repeat fixed center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    border: none;
+    box-shadow: 0 0 10px black;
+    padding: 0px 20px;
+    
+    /**box-shadow:3px 3px 5px 1px lightcyan;**/
+}
+
+.tabla{
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    padding-bottom: 7px;
+}
+.tabla button{
+    
+}
+#registro{
+    margin-left: 20px;
+    border-radius: 5px ;
+    margin-top: 20px;
+    background: url("../img/dasd.jpg") no-repeat fixed center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    border-color: darkcyan;
+    /**box-shadow:3px 3px 5px 1px lightcyan;**/
+    box-shadow: 0 0 10px #181818; 
+    padding: 0 25px 0        
+}
+
+.legend{
+    font-family: cursive;
+    color: black;
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+h1{
+    text-align: center;
+    padding: 25px 0px 5px;
+    font-size: 38px;
+    margin-top: 0
+}
+
+.contenedor{
+    margin-left: 50px;
+    width: 60%;
+    
+}
+.imginicio{
+    width: 520px;
+    height: 310px;
+    margin: 55px 0px 30px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #181818
+}
+
+.piedepag{
+    position: absolute;
+    margin-top: 100px;
+    left: 0%;
+    width: 100%;
+    background-color: #363839;
+    color: lightgray
+}
+.p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 90%;
+}
+.p1{
+    margin: 0 20px;
+    font-size: 16px;
+    font-weight: bolder
+}
+#par{
+    font-family: cursive;
+}
+.hr big b i a {
+    text-decoration: none;
+    color: whitesmoke
+}
+.hr big b i a:hover {
+    color: #F5B36C
+}
+
+hr{
+    border-color:white 
+}
+.hr{
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    padding: 0 20px 0 20px;
+    text-align: center
+}
+.derechos{
+    padding: 10px 0 10px 0;  
+}
+
+
+@font-face {
+	font-family: 'icomoon';
+	src:url('../fonts/icomoon.eot?-whp8f1');
+	src:url('../fonts/icomoon.eot?#iefix-whp8f1') format('embedded-opentype'),
+		url('../fonts/icomoon.ttf?-whp8f1') format('truetype'),
+		url('../fonts/icomoon.woff?-whp8f1') format('woff'),
+		url('../fonts/icomoon.svg?-whp8f1#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-plus:before {
+	content: "\e600";
+}
+.icon-minus:before {
+	content: "\e601";
+}
