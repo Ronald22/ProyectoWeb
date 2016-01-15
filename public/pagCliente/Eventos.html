@@ -22,42 +22,45 @@ and open the template in the editor.
                     <div class="logo">
                         <img class="imgini" src="../img/Terra2.png">
                     </div>
-                    <h1>La mejor Web de compentencia 4x4 y Motocross</h1>
+                    <h1>La mejor Web de competencias 4x4 y Motocross</h1>
                     <nav class="menu">
-                       <ul>
+                        <ul>
                             <li><a href="../pagCliente/Inicio.html">Inicio</a></li>
                             <li><a href="../pagCliente/Perfil.html">Mi Perfil</a></li>
-                            <li><a href="../pagCliente/Inscripcion.html">Inscripción</a></li> 
-                            <li><label>Novedades</label> 
-                                <ul>
-                                    <li><a href="../pagCliente/Eventos.html">Eventos</a></li>                                                
-                                    <li><a id="a" href="../pagCliente/Pistas.html">Pistas</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="../index.html">Cerrar Sesión</a></li>
-                        </ul>
+                            <li><a href="../pagCliente/Eventos.html">Evento</a></li>                                               
+                            <li><a id="a" href="../pagCliente/Pistas.html">Pistas</a></li>
+                         </ul>
                     </nav>
                 </div>  
             </header>
             <section>
-                <table class="tabla">
-                    <tr>
-                        <td><img src="../img/1.jpg" alt="200px" width="400px" /></td>
-                        <td><img src="../img/C2.jpg" alt="200px" width="400px" /></td>        
-                    </tr>
-                    <tr>
-                        <td><img src="../img/2.jpg" alt="200px" width="400px" /></td>
-                        <td><img src="../img/c1.jpg" alt="200px" width="400px" /></td>
-                    </tr>
-                    <tr>
-                        <td><img src="../img/3.jpg" alt="200px" width="400px" /></td>
-                        <td><img src="../img/C3.jpg" alt="200px" width="400px" /></td>            
-                    </tr>
-                    <tr>
-                        <td><img src="../img/4.jpg" alt="200px" width="400px" /></td>
-                        <td><img src="../img/5.jpg" alt="200px" width="400px" /></td>            
-                    </tr>
-                </table>
+                <h2 id="h2evento">Inscribete en nuestros Eventos</h2>
+                <article class="eventos">
+                    <div id="boximg">
+                        <img id="imgevent" src="../img/1.jpg" alt=""/>
+                    </div>
+                    <div id="boxdescripcionevento">
+                        <div>
+                            <p id="e_titulo">MotoGP</p>
+                            <div class="e_div">
+                                <p class="e_descripcion">Tipo: <span class="e_span">Motocross</span></p>                           
+                                <p class="e_descripcion">Pista: <span class="e_span">Celestial</span></p>
+                            </div>
+                            <div class="e_div">
+                                <p class="e_descripcion">Lugar: <span class="e_span">Manta</span></p>
+                                <p class="e_descripcion">Fecha: <span class="e_span">22 de Abril del 2016</span></p>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="e_descripcion2">Descripcion:</p>                       
+                            <p class="e_descripcion_cuerpo">Evento de Motocross en el circuito Celestial que consta de 3 
+                               vueltas el mas veloz gana.Premio de evento $1000 primer puesto, $750 segundo puesto y $500 
+                               tercer puesto. Participa y se el mejor!!</p>
+                        </div>
+                        <input type="button" value="Inscribirse" class="inscripcion" id="btninscribir">
+                    </div>   
+                </article>
+                <br>
             </section>
         </div>
         <footer class="barrafin">

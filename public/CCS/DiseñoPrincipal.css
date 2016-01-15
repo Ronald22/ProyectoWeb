@@ -72,19 +72,20 @@ h1{
 
 
 /*----------------------Menu-----------------------*/
-header nav{
+.menu{
         background:#333;
         background-image: -webkit-linear-gradient(bottom, #1B1B1B 10%, #363636 55%, #1B1B1B 78%);
         box-shadow: 0 0 10px #000;
         font-size: 14px;
         text-transform:uppercase;
         border-top:1px solid #000;         
-        height: 40px;       
+        height: 40px;
+        position: relative
 }
 header nav ul{
     list-style: none;
     margin: 0px auto;
-    width: 825px;
+    width: 715px;
     padding: 0px
 }
 nav ul li:hover > ul {
@@ -93,7 +94,7 @@ nav ul li:hover > ul {
 header nav ul li{
     border-right: 1px solid #181818; 
     float:left;
-    padding: 12px 15px;
+    padding: 12px 35px;
     position: relative
 }
 header nav ul li:hover{
@@ -103,32 +104,12 @@ header nav ul li:hover{
     -o-background-size: cover;
     background-size: cover;
 }
-header nav ul li:last-child {
-    border-right: none;
+header nav ul li:first-child{
+    border-left: 1px solid #181818;
 }
-header nav ul li ul{
-    background: url("../img/fondorange.jpg") center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    margin: 0;
-    width: 167px; height: 78px;
-    display: none;
-    position: absolute;
-    top: 40px; left: 0 
-}
+
 header nav ul li:hover ul {
     display:block;   
-}
-header nav ul li ul li{
-    border-right: none; 
-    padding: 11px 0; 
-    border-top: 1px solid darkorange;
-    margin: 0 12px
-}
-header nav ul li ul li:hover{
-    background: none; 
 }
 
 header nav ul li a{
@@ -137,13 +118,6 @@ header nav ul li a{
 a {color: #92DAF4;text-decoration: none; margin: auto}
 a:hover, a:active {color: #fff;text-decoration: none;}
 
-header nav ul li ul li a{
-    text-align: right;
-    padding-right: 53px
-}
-#a{
-    padding-right: 70px
-}
 label{
     text-align: center; font-weight:bold; color: #9B9B9B; padding: 0 25px; line-height: 5px;
 }
@@ -151,11 +125,15 @@ label:hover {
     color: #fff
 }
 
+
+
 /*---------------------Pagina de Inicio----------------------*/
 
 section{
     margin: 0 auto;
-    width: 880px
+    width: 880px;
+    font-family: sans-serif;
+    font-size: 14px
 }
 
 h2{
@@ -279,8 +257,145 @@ hr{
     letter-spacing: 0.03em
 }
 
+/*-------------------------Pagina de Eventos-----------------------------*/
 
-/*------------------------Pie de Pagina------------------*/
+#h2evento{
+    margin: 40px 0;
+    font-size: 28px;
+    text-align: center;
+    
+}
+
+.eventos{
+    border: 1px white solid;
+    border-radius: 10px;
+}
+
+#imgevent{
+    height: 220px; width: 230px;
+    margin: 15px;
+    box-shadow: 0 0 10px black;
+}
+#boximg{
+    float: left;
+
+}
+
+#e_titulo{
+    font-size: 19px;
+    font-weight: bolder;
+    color: orange;
+    margin: 0 490px;
+    padding-top: 10px; 
+}
+
+.e_descripcion{
+    margin: 10px 0;
+    font-weight: bolder;
+    font-size: 16px;
+}
+
+.e_descripcion2{
+    margin-top: 17px;
+    margin-bottom: 0;
+    margin: 10px 0;
+    font-weight: bolder;
+    font-size: 16px;
+}
+
+.e_div{
+    float: left;
+    width: 300px;
+    margin-bottom: 15px;
+}
+
+.e_div:last-of-type{
+    margin-right: 0
+}
+
+.e_span{
+    font-weight: 400 ;
+}
+
+.e_descripcion_cuerpo{
+    margin: 5px 15px;
+    text-align: justify; 
+}
+
+.inscripcion{
+    background: url("../img/fondorange.jpg") no-repeat ;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin: 15px 215px 10px ;
+    font-size: 15px; font-family: inherit;
+    border: 1px solid darkorange;
+    border-radius: 3px;
+    width: 100px; height: 27px; 
+    box-shadow: 0 0 10px black;   
+}
+
+/*----------------------------Pagina de Pista----------------------------*/
+
+#p_h2{
+    margin: 40px 0;
+    font-size: 28px;
+    text-align: center;
+}
+
+.imgpista{
+    height: 200px; width: 370px;
+    margin: 0 20px 10px;
+    box-shadow: 0 0 10px black;
+}
+ 
+.p_div{
+    width: 370px;
+    padding: 0px 20px 1px; 
+    border-top: 1px white solid;
+}
+
+.p_descripcion1{
+    text-align: center;
+    width: 370px;
+    padding: 10px 20px;
+    font-weight: bolder;
+    font-size: 24px;
+    margin: 0;
+    text-transform: uppercase; 
+    font-family: fantasy 
+}
+
+.p_descripcion{
+    margin: 15px 0;
+    font-weight: bolder;
+    font-size: 16px;
+    float: left;
+    width: 185px
+}
+.p_descripcion2{
+    margin: 5px 0 ;
+    font-weight: bolder;
+    font-size: 16px;
+}
+
+.p_span{
+    font-weight: 400;
+}
+
+.p_span:last-child{
+    margin: 0 0 13px ;
+    text-align: justify;
+}
+
+.p_div_cuerpo{
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+    margin-right: 50px
+}
+
+/*--------------------------Pie de Pagina------------------------------*/
 .barrafin{
     background: black;
     position: relative;
