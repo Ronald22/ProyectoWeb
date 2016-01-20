@@ -42,16 +42,32 @@ and open the template in the editor.
                         <hr>
                         <p class="datosperfil">Nombre: <span class="nombre">Tu nombre</span></p>
                         <p class="datosperfil">Edad: <span class="nombre">Tu edad</span></p>
+                        <p class="datosperfil">Sexo: <span class="nombre">Tu género</span></p>
                         <p class="datosperfil">Email: <span class="nombre">Tu email</span></p>
                         <p class="datosperfil">Fecha de Nacimiento: <span class="nombre">Tu fecha</span></p>
                         <input type="button" value="Editar Perfil" id="btneditar">
                     </div>
                 </article>
-                
-                <div id="miseventos">
+                <article id="edicion_perfil">
+                    <form>
+                        <h1>Editar Perfil</h1>
+                        <p>Porfavor completa tu informacion personal!!</p>
+                        <input type="image" id="inp_imgperfil" class="form_perfil"><br>
+                        <label>Nombres:</label><input type="text" id="inp_nombre" class="form_perfil"><br>
+                        <label>Apellidos:</label><input type="text" id="inp_apellido" class="form_perfil"><br>
+                        <label>Edad:</label><input type="number" id="inp_edad" class="form_perfil"><br>
+                        <label>Sexo:</label>
+                        <input type="radio" value="Hombre" id="inp_sexo_hombre" class="form_perfil"><label>Hombre</label>
+                        <input type="radio" value="Mujer" id="inp_sexo_mujer" class="form_perfil"><label>Mujer</label><br>
+                        <label>Email:</label><input type="text" id="inp_email" class="form_perfil"><br>
+                        <label>Fecha Nacimiento:</label><input type="date" id="inp_fecha" class="form_perfil"><br>
+                        <input type="button" value="Editar" id="btn_editar" class="form_perfil"><br>
+                    </form>
+                </article>
+                <article id="miseventos">
                     <h1 class="titulo">Mis Eventos</h1>
-                    <article class="miseventos">No esta registrado en ningun evento</article>
-                </div>
+                    <div class="miseventos">No esta registrado en ningun evento</div>
+                </article>
             </section>
         </div> 
         <footer class="barrafin">

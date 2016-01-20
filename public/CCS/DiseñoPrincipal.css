@@ -23,7 +23,7 @@ body{
     position: fixed;
     height: 45px; width: 1350px;
     top: 0 ; left: 0;
-    z-index: 10
+    z-index: 9
 }
 
 .psesion{
@@ -55,7 +55,7 @@ body{
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    margin: 45px 130px 15px; position: relative; top: 0; box-shadow: 0 0 10px black; 
+    margin: 45px 130px 15px; /*position: relative;*/ top: 0; box-shadow: 0 0 10px black; 
 }
 
 .imgini{
@@ -80,7 +80,7 @@ h1{
         text-transform:uppercase;
         border-top:1px solid #000;         
         height: 40px;
-        position: relative
+        /*position: relative*/
 }
 header nav ul{
     list-style: none;
@@ -95,7 +95,7 @@ header nav ul li{
     border-right: 1px solid #181818; 
     float:left;
     padding: 12px 35px;
-    position: relative
+    /*position: relative*/
 }
 header nav ul li:hover{
     background: url("../img/fondorange.jpg") center;
@@ -214,8 +214,7 @@ h2{
 
 .datosperfil{
     margin: 20px 35px 0;
-    font-size: 18px;
-    font-family: cursive;
+    font-size: 16px;
     font-weight: bolder ;
     color:#491F1D
 }
@@ -236,8 +235,7 @@ hr{
 }
 
 .nombre{
-    font-size: 17px;
-    font-family: cursive;
+    font-size: 16px;
     font-weight: 500;
     color: black
 }
@@ -255,6 +253,15 @@ hr{
     text-align: center;
     font-family: fantasy;
     letter-spacing: 0.03em
+}
+
+#edicion_perfil{
+    background: white;
+    border-radius: 10px;
+    position: fixed;
+    width: 700px; height: 600px;
+    top: 35px; left: 324.5px ;
+    z-index: 10
 }
 
 /*-------------------------Pagina de Eventos-----------------------------*/

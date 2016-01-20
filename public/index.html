@@ -60,11 +60,10 @@ and open the template in the editor.
                         <h3 class="legend">Registro</h3>
                         <p class="p" id="par">Eres nuevo!! Registrate en Terra</p>
                         <div class="tabla">
-                            <input type='text' id='txtnombres' required maxlength='15' placeholder='Nombre' class="entrada"/><br>
-                            <input type='text' id='txtapellidos' required maxlength='15' placeholder="Apellidos" class="entrada"/><br>
-                            <input type='date' id='txtnacimiento' min='1990-01-01' placeholder="Fecha de Nacimiento" max='2025-01-01' required class="entrada" /><br>
+                            <input type='text' id='txtusuario' required maxlength='15' placeholder="Nombre de Usuario" pattern="" class="entrada"/><br>                     
                             <input type='email' id='txtcorreo' placeholder='Correo' required class="entrada"/><br>
                             <input type='password' id='pass' placeholder="Contraseña" class="entrada"/><br>
+                            <input type='date' id='txtnacimiento' min='1990-01-01' placeholder="Fecha de Nacimiento" max='2025-01-01' required class="entrada" /><br>
                             <input type='hidden' id='FechaActual' name="fecha"/>
                             <input type='submit' id="btnregistro" value='Registrese' class="btn" />
                         </div>
