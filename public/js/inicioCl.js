@@ -26,7 +26,7 @@ $(document).ready(function(){
 
         $.ajax({
             type:"GET",
-            url:"http://localhost:3000/terra",
+            url:"http://localhost:8080/terra",
             dataType:"json",
             contentType:"text/plain"
         }).done(function(msg){
@@ -67,7 +67,7 @@ $(document).ready(function(){
                 
                $.ajax({
                    type:"POST",
-                   url:"http://localhost:3000/terra",
+                   url:"http://localhost:8080/terra",
                    dataType:"text",
                    contentType:"application/json",
                    data: JSON.stringify(datos)
