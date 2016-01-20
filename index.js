@@ -2,7 +2,7 @@ const path= require('path')
 const st = require('st')
  
 const mount= st({
-    path: path.join(__dirname,'public'),
+    path: path.join(__dirname,'..','public'),
     index: 'index.html'
 })
  
