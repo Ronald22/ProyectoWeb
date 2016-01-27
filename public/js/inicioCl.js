@@ -64,7 +64,7 @@ $(document).ready(function(){
             $("#resultado").html('<img class="img_resul" src="img/loader.gif"/>');
             $.ajax({    
                 type:"GET",
-                url:"http://localhost:8080/terra",
+                url:"projectoaweb.azurewebsites.net",
                 dataType:"json",
                 contentType:"text/plain"
             }).done(function(msg){              
@@ -155,7 +155,7 @@ $(document).ready(function(){
 
            $.ajax({
                type:"POST",
-               url:"http://localhost:8080/terra",
+               url:"projectoaweb.azurewebsites.net",
                dataType:"text",
                contentType:"application/json",
                data: JSON.stringify(datos)
@@ -177,18 +177,6 @@ $(document).ready(function(){
                 mensaje += "<div id='border_mensaje'></div>";
                 mensaje += "</div>";
             $("#mensaje").html(mensaje);
-            if($("#txtusuario").val() === null){
-            $("#resultado").html('<img class="img_resul" src="img/equis.png"/>');
-            }
-            if(band2 === false){
-            $("#resultado1").html('<img class="img_resul" src="img/equis.png"/>');
-            }
-            if(band3 === false){
-            $("#resultado2").html('<img class="img_resul" src="img/equis.png"/>');
-            }
-            if(band4 === false){
-            $("#resultado3").html('<img class="img_resul" src="img/equis.png"/>');
-            }
         }
     });
 });
