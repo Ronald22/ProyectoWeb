@@ -10,7 +10,7 @@ let contador=0
 let miRuta= new Firebase('https://terra-4x4.firebaseio.com/Usuario')
 let router=express.Router()
 router.use(bodyParser())
-router.route('/')
+router.usuario('/')
 .get(function(request,response){
     items=[]
     miRuta.once("value",function(snap){
@@ -22,7 +22,7 @@ router.route('/')
 })
 .post(function(req,res,next){
     miRuta.child(req.body.usuario).set(req.body)
-    res.status(200).send('ok')
+    res.status(200).send('Se registro correctamente')
 })
 .put(function(req,res,next){
 
@@ -40,6 +40,6 @@ router.route('/')
 });
 
 let app= express()
-.use('/terra',router)
-.use(express.static(__dirname+'/public'))
+.use('/usuario',router)
+.use(express.static(__dirname+'/public/index.html'))
 .listen(8080)
