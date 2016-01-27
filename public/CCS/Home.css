@@ -87,6 +87,7 @@ body {
     right: 0px;
     border-top: 35px solid transparent;
     border-left: 35px solid transparent;
+    
 }
 
 .desplegable:hover{ 
@@ -157,7 +158,7 @@ body {
 
 .formulario{
    float: right;
-   margin-top: 21px;
+   margin-top: 50px;
    margin-right: 25px;
    width: 35%;
        
@@ -189,6 +190,27 @@ body {
    border: 1px solid darkgreen
 }
 
+#mensaje_error_sesion{
+    background: white;
+    position: absolute;
+    width: 274px; 
+    opacity: 0.8 ;
+    padding: 0 15px;
+    top: -26px ; left: 665px;
+    border-radius: 10px;
+    text-align: justify;
+    font-family: sans-serif ;
+    font-size: 14px
+}
+
+#border_mensaje{
+    position: absolute;
+    border-top: 15px white solid;
+    border-bottom: 15px transparent solid;
+    border-right: 15px transparent solid;
+    border-left: 15px transparent solid;
+}
+
 #loguin{
     margin-left: 20px;
     border-radius: 5px ; 
@@ -210,9 +232,20 @@ body {
     width: 100%;
     padding-bottom: 7px;
 }
-.tabla button{
-    
+
+#mensaje_error_registro{
+    background: white;
+    position: absolute;
+    width: 274px; 
+    opacity: 0.8 ;
+    padding: 0 15px;
+    top: 169px ; left: 665px;
+    border-radius: 10px;
+    text-align: justify;
+    font-family: sans-serif ;
+    font-size: 14px
 }
+
 #registro{
     margin-left: 20px;
     border-radius: 5px ;
@@ -234,6 +267,65 @@ body {
     text-align: center;
     margin-bottom: 0;
     margin-top: 0;
+}
+
+.resultado{
+    position: absolute;
+    top:329px ; left: 933px;
+    width: 190px;
+    color: red;
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+.img_resul{
+    width: 19px; height: 19px;
+    float: left
+}
+
+.resultado1{
+    position: absolute;
+    top:371px ; left: 933px;
+    width: 190px;
+    color: red;
+    font-size: 16px;
+    font-weight: bolder;
+}
+.span_resul{
+margin: 0;
+    position: absolute;
+    background: white;
+    border-radius: 2px;
+    opacity: 0.8;
+    padding: 1px 3px;
+}
+
+.flecha{
+    border-bottom: 9px transparent solid;
+    border-top: 9px transparent solid;
+    border-right: 10px white solid;
+    border-left: 10px transparent solid;
+    opacity: 0.8;
+    float: left;
+    margin: 1px 0;
+}
+
+.resultado2{
+    position: absolute;
+    top:413px ; left: 933px;
+    width: 190px;
+    color: red;
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+.resultado3{
+    position: absolute;
+    top:455px ; left: 933px;
+    width: 190px;
+    color: red;
+    font-size: 16px;
+    font-weight: bolder;
 }
 
 h1{
