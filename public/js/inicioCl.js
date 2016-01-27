@@ -24,7 +24,7 @@ $(document).ready(function(){
         var band = 0;
         $.ajax({
             type:"GET",
-            url:"http://localhost:8080/terra",
+            url:"projectoaweb.azurewebsites.net/index.html",
             dataType:"json",
             contentType:"text/plain"
         }).done(function(msg){              
@@ -64,7 +64,7 @@ $(document).ready(function(){
             $("#resultado").html('<img class="img_resul" src="img/loader.gif"/>');
             $.ajax({    
                 type:"GET",
-                url:"projectoaweb.azurewebsites.net",
+                url:"projectoaweb.azurewebsites.net/index.html",
                 dataType:"json",
                 contentType:"text/plain"
             }).done(function(msg){              
