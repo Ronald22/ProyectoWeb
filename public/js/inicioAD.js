@@ -11,7 +11,7 @@
                     var contradmn='123456';
                     if((user === admin)&&(contra === contradmn)){
                             alert('Ud a Ingresado como Administrador');
-                            window.location.href='../pagCliente/Inicio.html';
+                            window.location.href='../pagAdministrador/verUsuario.html';
                     }
                     else{
                         if(user===admin){

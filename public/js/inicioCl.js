@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
+/*------------------------Despegable de Administrador--------------------*/
 $(document).ready(function(){
     var menustate = 0; 
     $(".linkdesple").click(function(){
@@ -19,7 +19,7 @@ $(document).ready(function(){
             menustate=0;
         }
     });
-    
+/*----------------------Inicio Sesion Usuario------------------------*/    
     $('#btniniciosecion').click(function(){                 
         var band = 0;
         $.ajax({
@@ -48,6 +48,7 @@ $(document).ready(function(){
             }                            
         });        
     });
+/*----------------------------Validación de Registro-------------------*/
     var band1;
     var band2;
     var band3;
@@ -87,6 +88,29 @@ $(document).ready(function(){
         }    
     });
     
+    $("#txtnombres").keyup(function(){
+        var nombre = $("#txtnombres").val();
+        if(nombre === ""){
+            band2 = false; 
+            $("#resultado4").html('');
+        }
+        else{
+            $("#resultado4").html('<img class="img_resul" src="img/visto.png"/>');
+            band1=true;
+        }
+    });
+        $("#txtapellidos").keyup(function(){
+        var apellido = $("#txtapellidos").val();
+        if(apellido === ""){
+            band2 = false; 
+            $("#resultado5").html('');
+        }
+        else{
+            $("#resultado5").html('<img class="img_resul" src="img/visto.png"/>');
+            band1=true;
+        }
+    });
+    
     $("#txtcorreo").keyup(function(){ 
         var correo = $("#txtcorreo").val();
         $("#mensaje").html('');
@@ -96,10 +120,11 @@ $(document).ready(function(){
         }
         else{
             var regex = /[\w-\.]{2,}@([\w-]{2,}\.)*([\w-]{2,}\.)[\w-]{2,4}/;           
-            if (regex.test($('#txtcorreo').val().trim())) {
+            if (regex.test($('#txtcorreo').val().trim())){
                 $("#resultado1").html('<img class="img_resul" src="img/visto.png"/>');
                 band2=true;
-            } else {
+            } 
+            else{
                 $("#resultado1").html('<img class="img_resul" src="img/equis.png"/><div class="flecha"></div><span class="span_resul">Correo incorrecto</span>');
                 band2 = false;
             }  
@@ -141,17 +166,19 @@ $(document).ready(function(){
             }
         }    
     });
-
+/*------------------------Insertar datos usuario----------------------------*/
     $("#btnregistro").click(function(){
         if((band1 === true)&&(band2 === true)&&(band3 === true)&&(band4 === true)){            
             var usuario = $("#txtusuario").val();
+            var nombre = $("#txtnombres").val();
+            var apellido = $("#txtapellidos").val();
             var email = $("#txtcorreo").val();
             var contraseña = $("#pass").val();
             var d = new Date();
             var fecharegistro = d.getFullYear() + "/" + (d.getMonth()+1) + "/" + d.getDate();
 
-            datos={"apellidos":"","contraseña":contraseña,"edad":"","email":email,"fechanacimiento":"",
-                   "fecharegistro":fecharegistro,"foto":"","nombres":"","usuario":usuario};
+            datos={"apellidos":apellido,"contraseña":contraseña,"edad":"","email":email,"fechanacimiento":"",
+                   "fecharegistro":fecharegistro,"foto":"","nombres":nombre,"usuario":usuario};
 
            $.ajax({
                type:"POST",
@@ -163,6 +190,8 @@ $(document).ready(function(){
                alert(msg);
            }); 
            $("#txtusuario").val('');
+           $("#txtnombres").val('');
+           $("#txtapellidos").val('');
            $("#txtcorreo").val('');
            $("#pass").val('');
            $("#repass").val('');
@@ -170,6 +199,8 @@ $(document).ready(function(){
            $("#resultado1").html('');
            $("#resultado2").html('');
            $("#resultado3").html('');
+           $("#resultado4").html('');
+           $("#resultado5").html('');
         }
         else{
             var mensaje = "<div id='mensaje_error_registro'>";
@@ -179,4 +210,26 @@ $(document).ready(function(){
             $("#mensaje").html(mensaje);
         }
     });
+});
+/*---------------------------Consultar Usuarios---------------------------*/
+$("#btnconsultar").click(function(){
+    $.ajax({
+        type:"GET",
+        url:"projectoaweb.azurewebsites.net/",
+        dataType:"json",
+        contentType:"text/plain"
+    }).done(function(msg){
+        var consulta='<table border=1 class="consultaUsuario">';
+        for (var dato in msg[0]){
+            consulta+='<tr>';
+            consulta+='<td>'+  msg[0][dato].usuario+'</td>';
+            consulta+='<td>'+ msg[0][dato].nombres+" "+  msg[0][dato].apellidos+'</td>';
+            consulta+='<td>'+  msg[0][dato].email+'</td>';
+            consulta+='<td>'+ msg[0][dato].contraseña+'</td>';
+            consulta+='<td>'+  msg[0][dato].fecharegistro+'</td>';
+            consulta+='</tr>';
+        }
+        consulta+='</table>';
+        $("#boxUsuario").html(consulta);
+   });
 });

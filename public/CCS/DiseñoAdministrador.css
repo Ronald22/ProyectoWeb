@@ -1,0 +1,94 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 27/08/2015, 23:00:59
+    Author     : Ronald
+*/
+/*------------------------Sesion Administrador-------------------------*/
+#body{
+     background: url("../img/fondo.png") no-repeat fixed center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.formulario{
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    margin-top: 100px; 
+}
+
+img{
+    width: 320px;
+    height: 210px;
+    margin: 0px 37px 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px black;
+}
+#loguin{
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    background: url("../img/fond.jpg") no-repeat ;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    border-radius: 5px;
+    box-shadow: 0 0 10px black;   
+}
+
+.entrada{
+    margin: 5px 58px;
+    width: 280px; height: 30px; 
+    font-size: 15px; font-family: inherit;
+    border: 1px solid #CCD6DD;
+    border-radius: 3px;
+    
+}
+
+.check:first-child{
+    margin: 5px 0px 10px 58px
+}
+
+.btn{
+    background: url("../img/fondorange.jpg") no-repeat ;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin: 5px 0px 10px 43px;
+    font-size: 15px; font-family: inherit;
+    border: 1px solid darkorange;
+    border-radius: 3px;
+    width: 140px; height: 27px; 
+    box-shadow: 0 0 10px black;   
+}
+
+.legend{
+    text-align: center;
+    font-family: cursive;
+    margin-top: 0;
+    padding-top: 15px
+}
+
+/*------------------------------Ver Usuario----------------------------*/
+
+.consultaUsuario{
+    margin: 0 auto;
+    width: 60%;
+}
+
+.boxeliminar{
+    margin: 0 auto;
+    width: 60%;
+}
+
+.boxconsultar{
+    margin: 0 auto;
+    width: 8.19%;
+}

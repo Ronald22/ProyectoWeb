@@ -158,10 +158,9 @@ body {
 
 .formulario{
    float: right;
-   margin-top: 50px;
-   margin-right: 25px;
+   margin-top: 25px;
+   margin-right: 40px;
    width: 35%;
-       
 }
 .entrada{
     margin-left: auto;
@@ -178,6 +177,22 @@ body {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.05) inset, 0px 0px 8px rgba(82, 168, 236, 0.6);
 }
 
+.entrada1{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    width: 131.5px;
+    height: 30px;
+    font-size: 15px;
+    font-family: inherit;
+    border: 1px solid #CCD6DD;
+    border-radius: 3px;
+    padding: 0 5px;
+}
+
+.entrada1:focus{
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.05) inset, 0px 0px 8px rgba(82, 168, 236, 0.6);
+}
 
 .btn{
    background: url(../img/imgboton.jpg);
@@ -196,7 +211,7 @@ body {
     width: 274px; 
     opacity: 0.8 ;
     padding: 0 15px;
-    top: -26px ; left: 665px;
+    top: -49px ; left: 665px;
     border-radius: 10px;
     text-align: justify;
     font-family: sans-serif ;
@@ -229,20 +244,21 @@ body {
 .tabla{
     margin-left: auto;
     margin-right: auto;
-    width: 100%;
-    padding-bottom: 7px;
+    width: 104%;
+    padding-bottom:7px;
 }
 
 #mensaje_error_registro{
     background: white;
     position: absolute;
-    width: 274px; 
-    opacity: 0.8 ;
+    width: 274px;
+    opacity: 0.8;
     padding: 0 15px;
-    top: 169px ; left: 665px;
+    top: 145px;
+    left: 665px;
     border-radius: 10px;
     text-align: justify;
-    font-family: sans-serif ;
+    font-family: sans-serif;
     font-size: 14px
 }
 
@@ -271,7 +287,8 @@ body {
 
 .resultado{
     position: absolute;
-    top:329px ; left: 933px;
+    top: 304px;
+    left: 918px;
     width: 190px;
     color: red;
     font-size: 16px;
@@ -285,7 +302,8 @@ body {
 
 .resultado1{
     position: absolute;
-    top:371px ; left: 933px;
+    top: 389px;
+    left: 920px;
     width: 190px;
     color: red;
     font-size: 16px;
@@ -312,7 +330,8 @@ margin: 0;
 
 .resultado2{
     position: absolute;
-    top:413px ; left: 933px;
+    top: 431px;
+    left: 920px;
     width: 190px;
     color: red;
     font-size: 16px;
@@ -321,7 +340,28 @@ margin: 0;
 
 .resultado3{
     position: absolute;
-    top:455px ; left: 933px;
+    top: 473px;
+    left: 920px;
+    width: 190px;
+    color: red;
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+.resultado4{
+    position: absolute;
+    top: 346px;
+    left: 775px;
+    width: 20px;
+    color: red;
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+.resultado5{
+    position: absolute;
+    top: 346px;
+    left: 920px;
     width: 190px;
     color: red;
     font-size: 16px;
