@@ -220,19 +220,19 @@ $(document).ready(function(){
         }).done(function(msg){
             var consulta='<table border=1 class="consultaUsuario">';
                 consulta+='<tr>';
-                consulta+='<th>Usuario</th>';
-                consulta+='<th>Nombres y Apellidos</th>';
-                consulta+='<th>Correo</th>';
-                consulta+='<th>Contraseña</th>';
-                consulta+='<th>Fecha de Registro</th>';
+                consulta+='<th class="th">Usuario</th>';
+                consulta+='<th class="th">Nombres y Apellidos</th>';
+                consulta+='<th class="th">Correo</th>';
+                consulta+='<th class="th">Contraseña</th>';
+                consulta+='<th class="th">Fecha de Registro</th>';
                 consulta+='</tr>';
             for (var dato in msg[0]){
                 consulta+='<tr>';
-                consulta+='<td>'+  msg[0][dato].usuario+'</td>';
-                consulta+='<td>'+ msg[0][dato].nombres+" "+  msg[0][dato].apellidos+'</td>';
-                consulta+='<td>'+  msg[0][dato].email+'</td>';
-                consulta+='<td>'+ msg[0][dato].contraseña+'</td>';
-                consulta+='<td>'+  msg[0][dato].fecharegistro+'</td>';
+                consulta+='<td class="td">'+  msg[0][dato].usuario+'</td>';
+                consulta+='<td class="td">'+ msg[0][dato].nombres+" "+  msg[0][dato].apellidos+'</td>';
+                consulta+='<td class="td">'+  msg[0][dato].email+'</td>';
+                consulta+='<td class="td">'+ msg[0][dato].contraseña+'</td>';
+                consulta+='<td class="td">'+  msg[0][dato].fecharegistro+'</td>';
                 consulta+='</tr>';
             }
             consulta+='</table>';

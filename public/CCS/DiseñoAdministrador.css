@@ -85,11 +85,11 @@ and open the template in the editor.
     border: 1px black solid;
 }
 
-th{
+.th{
     background: lightblue;
 }
 
-td{
+.td{
   background: white;  
 } 
 
