@@ -24,7 +24,7 @@ $(document).ready(function(){
         var band = 0;
         $.ajax({
             type:"GET",
-            url:"projectoaweb.azurewebsites.net/usuario",
+            url:"projectoaweb.azurewebsites.net",
             dataType:"json",
             contentType:"text/plain"
         }).done(function(msg){              
@@ -210,26 +210,34 @@ $(document).ready(function(){
             $("#mensaje").html(mensaje);
         }
     });
+/*---------------------------Consultar Usuarios---------------------------*/    
+    $("#consultar").click(function(){
+        $.ajax({
+            type:"GET",
+            url:"http://projectoaweb.azurewebsites.net/",
+            dataType:"json",
+            contentType:"text/plain"
+        }).done(function(msg){
+            var consulta='<table border=1 class="consultaUsuario">';
+                consulta+='<tr>';
+                consulta+='<th>Usuario</th>';
+                consulta+='<th>Nombres y Apellidos</th>';
+                consulta+='<th>Correo</th>';
+                consulta+='<th>Contraseña</th>';
+                consulta+='<th>Fecha de Registro</th>';
+                consulta+='</tr>';
+            for (var dato in msg[0]){
+                consulta+='<tr>';
+                consulta+='<td>'+  msg[0][dato].usuario+'</td>';
+                consulta+='<td>'+ msg[0][dato].nombres+" "+  msg[0][dato].apellidos+'</td>';
+                consulta+='<td>'+  msg[0][dato].email+'</td>';
+                consulta+='<td>'+ msg[0][dato].contraseña+'</td>';
+                consulta+='<td>'+  msg[0][dato].fecharegistro+'</td>';
+                consulta+='</tr>';
+            }
+            consulta+='</table>';
+            $("#boxUsuario").html(consulta);
+       });
+    });
 });
-/*---------------------------Consultar Usuarios---------------------------*/
-$("#btnconsultar").click(function(){
-    $.ajax({
-        type:"GET",
-        url:"projectoaweb.azurewebsites.net/",
-        dataType:"json",
-        contentType:"text/plain"
-    }).done(function(msg){
-        var consulta='<table border=1 class="consultaUsuario">';
-        for (var dato in msg[0]){
-            consulta+='<tr>';
-            consulta+='<td>'+  msg[0][dato].usuario+'</td>';
-            consulta+='<td>'+ msg[0][dato].nombres+" "+  msg[0][dato].apellidos+'</td>';
-            consulta+='<td>'+  msg[0][dato].email+'</td>';
-            consulta+='<td>'+ msg[0][dato].contraseña+'</td>';
-            consulta+='<td>'+  msg[0][dato].fecharegistro+'</td>';
-            consulta+='</tr>';
-        }
-        consulta+='</table>';
-        $("#boxUsuario").html(consulta);
-   });
-});
+

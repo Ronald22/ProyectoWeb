@@ -41,5 +41,5 @@ router.route('/')
 
 let app = express()
 .use('/usuario',router)
-.use(express.static(__dirname+'/public/index.html'))
+.use(express.static(__dirname+'/public'))
 .listen(8080)
