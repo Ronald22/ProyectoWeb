@@ -1,6 +1,7 @@
 'use strict'
 const express = require('express')
 const http = require('http')
+const port = process.env.PORT || 8080;
 const bodyParser=require('body-parser')
 const Firebase= require('firebase')
 let items=[]
@@ -42,4 +43,4 @@ router.route('/')
 let app = express()
 .use('/usuario',router)
 .use(express.static(__dirname+'/public'))
-.listen(8080)
+.listen(port)
