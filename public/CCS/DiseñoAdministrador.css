@@ -81,9 +81,17 @@ and open the template in the editor.
 .consultaUsuario{
     margin: 68px 0 0 150px;
     width: 80%;
-    background: lightcyan;
+   
     border: 1px black solid;
 }
+
+th{
+    background: lightblue;
+}
+
+td{
+  background: white;  
+} 
 
 .boxCRUD{
     width: 130px; 
