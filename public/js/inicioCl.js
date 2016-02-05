@@ -211,7 +211,7 @@ $(document).ready(function(){
         }
     });
 /*---------------------------Consultar Usuarios---------------------------*/    
-    $("#consultar").click(function(){
+    $("#btnconsultar").click(function(){
         $.ajax({
             type:"GET",
             url:"http://projectoaweb.azurewebsites.net/usuario",
@@ -239,5 +239,20 @@ $(document).ready(function(){
             $("#boxUsuario").html(consulta);
        });
     });
+    /*------------------------------Eliminar Usuario--------------------*/
+     $("#btneliminar").click(function(){
+                var usuario=$("#txteliminar").val();                
+                datos={"usuario":usuario};
+
+               $.ajax({
+                   type:"DELETE",
+                   url:"http://projectoaweb.azurewebsites.net/usuario",
+                   dataType:"text",
+                   contentType:"application/json",
+                   data:JSON.stringify(datos)
+               }).done(function(msg){
+                   alert(msg);
+               });
+            });
 });
 
