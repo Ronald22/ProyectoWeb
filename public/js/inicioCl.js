@@ -214,7 +214,7 @@ $(document).ready(function(){
     $("#consultar").click(function(){
         $.ajax({
             type:"GET",
-            url:"http://projectoaweb.azurewebsites.net/",
+            url:"http://projectoaweb.azurewebsites.net/usuario",
             dataType:"json",
             contentType:"text/plain"
         }).done(function(msg){
