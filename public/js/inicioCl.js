@@ -24,7 +24,7 @@ $(document).ready(function(){
         var band = 0;
         $.ajax({
             type:"GET",
-            url:"projectoaweb.azurewebsites.net",
+            url:"http://projectoaweb.azurewebsites.net/usuario",
             dataType:"json",
             contentType:"text/plain"
         }).done(function(msg){              
@@ -65,7 +65,7 @@ $(document).ready(function(){
             $("#resultado").html('<img class="img_resul" src="img/loader.gif"/>');
             $.ajax({    
                 type:"GET",
-                url:"projectoaweb.azurewebsites.net/usuario",
+                url:"http://projectoaweb.azurewebsites.net/usuario",
                 dataType:"json",
                 contentType:"text/plain"
             }).done(function(msg){              
@@ -182,7 +182,7 @@ $(document).ready(function(){
 
            $.ajax({
                type:"POST",
-               url:"projectoaweb.azurewebsites.net/usuario",
+               url:"http://projectoaweb.azurewebsites.net/usuario",
                dataType:"text",
                contentType:"application/json",
                data: JSON.stringify(datos)
