@@ -21,10 +21,10 @@ rutaUsuario.route('/')
         return response.send(items)
      })
 })
-var mensaje = "<p class='text_registro'>Gracias por registrarse en TERRA 4x4. Porfavor inicie sesión</p>"
+
 .post(function(req,res,next){
     miUsuario.child(req.body.usuario).set(req.body)
-    res.status(200).send($("#box_registro").html(mensaje))
+    res.status(200).send()
 })
 .put(function(req,res,next){
 
