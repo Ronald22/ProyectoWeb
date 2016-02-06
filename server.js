@@ -23,8 +23,11 @@ rutaUsuario.route('/')
 })
 
 .post(function(req,res,next){
+    let mensaje ="<h3 class='registro_correcto'>REGISTRO TERRA</h3>"
+        mensaje+="<p class='text_registro'>Gracias por registrarse en TERRA 4x4. Porfavor inicie sesión</p>"
+    let registro = $("#box_registro").html(mensaje)
     miUsuario.child(req.body.usuario).set(req.body)
-    res.status(200).send()
+    res.status(200).send(registro)
 })
 .put(function(req,res,next){
 
