@@ -213,6 +213,10 @@ $(document).ready(function(){
             $("#resultado3").html('');
             $("#resultado4").html('');
             $("#resultado5").html('');
+            
+            $("#cerrarmensaje").click(function(){
+                $("#correct").html('');
+            });
         }
         else{
             var mensaje = "<div id='mensaje_error_registro'>";
@@ -222,9 +226,7 @@ $(document).ready(function(){
             $("#mensaje").html(mensaje);
         }
     });
-    $("#cerrarmensaje").click(function(){
-        $("#correct").html('');
-    });
+
 /*---------------------------Consultar Usuarios---------------------------*/    
     $("#btnconsultar").click(function(){
         $.ajax({
