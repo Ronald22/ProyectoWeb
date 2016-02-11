@@ -9,6 +9,7 @@ and open the template in the editor.
         <title>Crear Eventos</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../CCS/DiseñoAdministrador.css" rel="stylesheet" type="text/css"/>
         <link href="../CCS/DiseñoPrincipal.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
@@ -33,22 +34,41 @@ and open the template in the editor.
                 </div>  
             </header>
             <section>
+               
                 <article>
                     <form class="form_Evento">
-                        <p class="form_p">Ingrese los datos del evento</p>
-                        <label class="form_label">ID:</label><input type="text" id="inp_id" class="form_perf1"><br>
-                        <label class="form_label">Nombre:</label><input type="text" id="inp_nombre" class="form_perf1"><br>
-                        <label class="form_label">Lugar:</label><input type="text" id="inp_lugar" class="form_perf1"><br>
-                        <label class="form_label">Tipo:</label>
-                        <select name="Tipo" id="inp_tipo" class="form_perf1">
+                        <p class="form_peven">Ingrese los datos del evento</p>
+                        <label class="form_labeleven">ID:</label><input type="text" id="inp_id" class="form_even "><br>
+                        <label class="form_labeleven">Nombre:</label><input type="text" id="inp_nombre" class="form_even"><br>
+                        <label class="form_labeleven">Lugar:</label><input type="text" id="inp_lugar" class="form_even"><br>
+                        <label class="form_labeleven">Tipo:</label>
+                        <select name="Tipo" id="inp_tipo" class="form_even">
                             <option>...</option>
                             <option>4x4</option>
                             <option>Motocross</option>
                         </select><br>
-                        <label class="form_label">Pista:</label><input type="text" id="inp_pista" class="form_perf1"><br>
-                        <label class="form_label">Fecha:</label><input type="date" id="inp_fecha" class="form_perf1"><br>
-                        <input type="button" value="Crear" id="btn_crear" class="for_btn"><br>
-                    </form>
+                        <label class="form_labeleven">Pista:</label><input type="text" id="inp_pista" class="form_even"><br>
+                        <label class="form_labeleven">Fecha:</label><input type="date" id="inp_fecha" class="form_even"><br>
+                        <input type="button" value="Crear" id="btn_crear" class="for_btn">
+                        <input type="button" value="Modificar" id="btn_modificarr" class="for_btn">
+                    </form><br><br>
+                </article>
+                <article class="boxCRUDevent">
+                    <input type="button" id="btnconsultar" value="Consultar" class="CRUDevento">                    
+                    <input type="button" id="btneliminar" value="Eliminar" class="CRUDevento">
+                    <input type="text" id="txteliminar" placeholder="Usuario a eliminar" class="inpeliminar">
+                </article>
+                <article id="boxEvento">
+                    <table border="1" class="consultaEvento">
+                        <tr>
+                            <th class="th">ID</th>
+                            <th class="th">Nombre</th>
+                            <th class="th">Lugar</th>
+                            <th class="th">Fecha</th>
+                            <th class="th">Tipo</th>
+                            <th class="th">Pista</th>
+                        </tr>
+                    </table>                    
                 </article>
             </section>
         </div>

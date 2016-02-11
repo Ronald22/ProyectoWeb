@@ -126,3 +126,71 @@ and open the template in the editor.
 .inpeliminar:focus{
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.05) inset, 0px 0px 8px rgba(82, 168, 236, 0.6);
 }
+
+/*--------------------------Crear Eventos-----------------------------------*/
+.form_Evento{
+    margin: 50px -65px;
+    border: 1px black dashed;
+    padding: 15px;
+    width: 265px
+}
+
+.form_even{
+    margin: 12px 0; 
+    font-size: 13px; font-family: inherit;
+    border-radius: 3px;
+    padding: 0 5px;
+}
+
+.form_labeleven{
+    margin-right: 10px; 
+    text-align: center; 
+    font-weight:bold; 
+    color: #9B9B9B; 
+    font-size: 16px;
+}
+
+.form_peven{
+   font-size: 16px;
+   font-weight: bold
+}
+
+.consultaEvento{
+    margin: 70px 0 0 200px;
+    width: 50%;
+    border: 1px black solid;
+    position: absolute;
+    top: 280px;
+    left: 320px;
+}
+
+.for_btn{
+    background: url("../img/fondorange.jpg") no-repeat ;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin: 10px 15px 0px;
+    font-size: 12px; font-family: inherit;
+    border-radius: 3px;
+    width: 100px; height: 25px; 
+}
+
+.boxCRUDevent{
+    width: 530px;
+    position: absolute;
+    top: 300px;
+    left: 520px;
+}
+
+.CRUDevento{
+    background: url("../img/fondorange.jpg") no-repeat ;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin: 20px 2px 0px;
+    font-size: 13px; font-family: inherit;
+    border-radius: 3px;
+    width: 120px; height: 25px; 
+}

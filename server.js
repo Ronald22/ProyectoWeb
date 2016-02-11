@@ -57,7 +57,7 @@ rutaEvento.route('/')
 })
 .post(function(req,res,next){
     miEvento.child(req.body.id).set(req.body)
-    res.status(200).send('Se registro correctamente')
+    res.status(200).send('Su evento se creo correctamente')
 })
 .put(function(req,res,next){
     miEvento.child(req.body.id).set(req.body)
@@ -70,7 +70,7 @@ rutaEvento.route('/')
             return res.status(404).send('error ')
         }
     })
-    return res.status(200).send('ok')
+    return res.status(200).send('Evento eliminado')
 });
 
 let app = express()

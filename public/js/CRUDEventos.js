@@ -26,4 +26,35 @@ $(document).ready(function(){
                alert(msg);
             });
     });
+    
+    $("#btnconsultar").click(function(){
+        $.ajax({
+            type:"GET",
+            url:"http://projectoaweb.azurewebsites.net/evento",
+            dataType:"json",
+            contentType:"text/plain"
+        }).done(function(msg){
+            var consulta='<table border=1 class="consultaEvento">';
+                consulta+='<tr>';
+                consulta+='<th class="th">Id</th>';
+                consulta+='<th class="th">Nombre</th>';
+                consulta+='<th class="th">Lugar</th>';
+                consulta+='<th class="th">Fecha</th>';
+                consulta+='<th class="th">Tipo</th>';
+                consulta+='<th class="th">Pista</th>';
+                consulta+='</tr>';
+            for (var dato in msg[0]){
+                consulta+='<tr>';
+                consulta+='<td class="td">'+  msg[0][dato].id+'</td>';
+                consulta+='<td class="td">'+ msg[0][dato].nombre+'</td>';
+                consulta+='<td class="td">'+  msg[0][dato].Lugar+'</td>';
+                consulta+='<td class="td">'+ msg[0][dato].fecha+'</td>';
+                consulta+='<td class="td">'+  msg[0][dato].tipo+'</td>';
+                consulta+='<td class="td">'+  msg[0][dato].pista+'</td>';
+                consulta+='</tr>';
+            }
+            consulta+='</table>';
+            $("#boxEvento").html(consulta);
+       });
+    });
 });
