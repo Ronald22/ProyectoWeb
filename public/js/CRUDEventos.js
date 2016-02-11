@@ -57,4 +57,19 @@ $(document).ready(function(){
             $("#boxEvento").html(consulta);
        });
     });
+    
+    $("#btneliminar").click(function(){
+        var ideliminar=$("#txteliminar").val();                
+        datos={"id":ideliminar};
+
+        $.ajax({
+            type:"DELETE",
+            url:"http://projectoaweb.azurewebsites.net/evento",
+            dataType:"text",
+            contentType:"application/json",
+            data:JSON.stringify(datos)
+        }).done(function(msg){
+            alert(msg);
+        });
+    });
 });
