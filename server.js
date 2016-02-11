@@ -38,7 +38,7 @@ rutaUsuario.route('/')
             return res.status(404).send('error ')
         }
     })
-    return res.status(200).send('ok')
+    return res.status(200).send('Se elimino correctamente')
 });
 
 /*----------------------------Eventos--------------------------------*/
