@@ -400,6 +400,14 @@ h1{
     width: 60%;
     
 }
+
+#cerrarmensaje{
+    position: absolute;
+    background: white;
+    border-radius: 5px;
+    top: 3px;
+    left: 379px;
+}
 .imginicio{
     width: 520px;
     height: 310px;

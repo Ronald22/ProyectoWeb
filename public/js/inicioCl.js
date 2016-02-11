@@ -185,27 +185,34 @@ $(document).ready(function(){
             datos={"apellidos":apellido,"contraseña":contraseña,"edad":"","email":email,"fechanacimiento":"",
                    "fecharegistro":fecharegistro,"foto":"","nombres":nombre,"usuario":usuario};
 
-           $.ajax({
+            $.ajax({
                type:"POST",
                url:"http://projectoaweb.azurewebsites.net/usuario",
                dataType:"text",
                contentType:"application/json",
                data: JSON.stringify(datos)
-           }).done(function(msg){
+            }).done(function(msg){
                alert(msg);
-           }); 
-           $("#txtusuario").val('');
-           $("#txtnombres").val('');
-           $("#txtapellidos").val('');
-           $("#txtcorreo").val('');
-           $("#pass").val('');
-           $("#repass").val('');
-           $("#resultado").html('');
-           $("#resultado1").html('');
-           $("#resultado2").html('');
-           $("#resultado3").html('');
-           $("#resultado4").html('');
-           $("#resultado5").html('');
+            });
+            var correcto = "<div id='box_registro'>";
+               correcto+= "<h3 class='registro_correcto'>REGISTRO TERRA</h3>";
+               correcto+= "<p class='text_registro'>Gracias por registrarse en TERRA 4x4. Porfavor inicie sesión</p>";
+               correcto+= "<input type='button' id='cerrarmensaje' value='x'>";
+               correcto+= "</div>";
+            $("#correct").html(correcto);
+            
+            $("#txtusuario").val('');
+            $("#txtnombres").val('');
+            $("#txtapellidos").val('');
+            $("#txtcorreo").val('');
+            $("#pass").val('');
+            $("#repass").val('');
+            $("#resultado").html('');
+            $("#resultado1").html('');
+            $("#resultado2").html('');
+            $("#resultado3").html('');
+            $("#resultado4").html('');
+            $("#resultado5").html('');
         }
         else{
             var mensaje = "<div id='mensaje_error_registro'>";
@@ -214,6 +221,9 @@ $(document).ready(function(){
                 mensaje += "</div>";
             $("#mensaje").html(mensaje);
         }
+    });
+    $("#cerrarmensaje").click(function(){
+        $("#correct").html('');
     });
 /*---------------------------Consultar Usuarios---------------------------*/    
     $("#btnconsultar").click(function(){
