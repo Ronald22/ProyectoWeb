@@ -118,15 +118,6 @@ header nav ul li a{
 a {color: #92DAF4;text-decoration: none; margin: auto}
 a:hover, a:active {color: #fff;text-decoration: none;}
 
-label{
-    text-align: center; font-weight:bold; color: #9B9B9B; padding: 0 25px; line-height: 5px;
-}
-label:hover {
-    color: #fff
-}
-
-
-
 /*---------------------Pagina de Inicio----------------------*/
 
 section{
@@ -259,9 +250,69 @@ hr{
     background: white;
     border-radius: 10px;
     position: fixed;
-    width: 700px; height: 600px;
-    top: 35px; left: 324.5px ;
-    z-index: 10
+    width: 600px; height: 400px;
+    top: 85px; left: 424.5px ;
+    z-index: 10;
+    display: none;
+}
+
+.form{
+    margin: 0 85px
+}
+
+.form_label{
+    margin-left: 25px;
+    margin-right: 10px;
+    text-align: center; 
+    font-weight:bold; 
+    color: #9B9B9B; 
+    font-size: 16px;
+}
+
+.form_btn{
+    margin: 12px 35%;
+    background: url("../img/fondorange.jpg") no-repeat ;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-size: 15px; font-family: inherit;
+    border: 1px solid darkorange;
+    border-radius: 3px;
+    width: 140px; height: 25px; 
+}
+
+.form_perfil{
+    margin: 12px 0;
+    width: 140px; height: 25px; 
+    border: 1px #CCD6DD solid;
+    border-radius: 3px;
+    padding: 0 5px;
+}
+.form_perf{
+    margin: 12px 0;
+    width: 100px; height: 25px; 
+    font-size: 13px; font-family: inherit;
+    border-radius: 3px;
+    border: 1px #CCD6DD solid;
+    padding: 0 5px;
+}
+.form_perf1{
+    margin: 12px 0; 
+    font-size: 13px; font-family: inherit;
+    border-radius: 3px;
+    padding: 0 5px;
+}
+.form_h1{
+    padding: 25px;
+    font-size: 24px;
+    font-family: sans-serif;
+    margin: 0;  
+}
+
+.form_p{
+    margin-top: 0;
+    font-size: 19px;
 }
 
 /*-------------------------Pagina de Eventos-----------------------------*/

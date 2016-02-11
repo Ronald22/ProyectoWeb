@@ -10,11 +10,13 @@ and open the template in the editor.
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="../CCS/DiseñoPrincipal.css" rel="stylesheet" type="text/css"/>
+        <script src="../js/jquery.js" type="text/javascript"></script>
+        <script src="../js/inicioCl.js" type="text/javascript"></script>
     </head>
     <body>
         <div class="barraini">
             <a class="psesion" href="../index.html"><span class="sesion">Cerrar</span></a>
-            <a class="psesion" href="../pagCliente/Perfil.html">Sesión: <span class="sesion"> Ronald Castro </span></a>            
+            <a class="psesion" href="../pagCliente/Perfil.html">Sesión: <span id="miusuario" class="sesion"></span></a>            
         </div>
         <div id="fondo">
             <header>
@@ -40,28 +42,28 @@ and open the template in the editor.
                     <div>
                         <img id="imgperfil" src="../img/perfil.jpg" alt=""/>
                         <hr>
-                        <p class="datosperfil">Nombre: <span class="nombre">Tu nombre</span></p>
-                        <p class="datosperfil">Edad: <span class="nombre">Tu edad</span></p>
-                        <p class="datosperfil">Sexo: <span class="nombre">Tu género</span></p>
-                        <p class="datosperfil">Email: <span class="nombre">Tu email</span></p>
-                        <p class="datosperfil">Fecha de Nacimiento: <span class="nombre">Tu fecha</span></p>
+                        <p class="datosperfil">Nombre: <span id="minombre" class="nombre"></span></p>
+                        <p class="datosperfil">Edad: <span id="miedad" class="nombre"> Años</span></p>
+                        <p class="datosperfil">Sexo: <span id="migenero" class="nombre"></span></p>
+                        <p class="datosperfil">Email: <span id="miemail" class="nombre"></span></p>
+                        <p class="datosperfil">Fecha de Nacimiento: <span id="mifecha" class="nombre"></span></p>
                         <input type="button" value="Editar Perfil" id="btneditar">
                     </div>
                 </article>
                 <article id="edicion_perfil">
-                    <form>
-                        <h1>Editar Perfil</h1>
-                        <p>Porfavor completa tu informacion personal!!</p>
-                        <input type="image" id="inp_imgperfil" class="form_perfil"><br>
-                        <label>Nombres:</label><input type="text" id="inp_nombre" class="form_perfil"><br>
-                        <label>Apellidos:</label><input type="text" id="inp_apellido" class="form_perfil"><br>
-                        <label>Edad:</label><input type="number" id="inp_edad" class="form_perfil"><br>
-                        <label>Sexo:</label>
-                        <input type="radio" value="Hombre" id="inp_sexo_hombre" class="form_perfil"><label>Hombre</label>
-                        <input type="radio" value="Mujer" id="inp_sexo_mujer" class="form_perfil"><label>Mujer</label><br>
-                        <label>Email:</label><input type="text" id="inp_email" class="form_perfil"><br>
-                        <label>Fecha Nacimiento:</label><input type="date" id="inp_fecha" class="form_perfil"><br>
-                        <input type="button" value="Editar" id="btn_editar" class="form_perfil"><br>
+                    <form class="form">
+                        <h1 class="form_h1">Editar Perfil</h1>
+                        <p class="form_p">Porfavor completa tu informacion personal!!</p>
+                        <label class="form_label">Foto Perfil:</label><input type="file" id="inp_imgperfil" class="form_perf1"><br>
+                        <label class="form_label">Edad:</label><input type="number" id="inp_edad" class="form_perf"><br>
+                        <label class="form_label">Sexo:</label>
+                        <select name="Sexo" class="form_perf">
+                            <option>...</option>
+                            <option>Hombre</option>
+                            <option>Mujer</option>
+                        </select><br>
+                        <label class="form_label">Fecha Nacimiento:</label><input type="date" id="inp_fecha" class="form_perfil"><br>
+                        <input type="button" value="Editar" id="btn_editar" class="form_btn"><br>
                     </form>
                 </article>
                 <article id="miseventos">

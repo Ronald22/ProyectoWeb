@@ -33,10 +33,15 @@ $(document).ready(function(){
                 var contra = $('#txtcontra').val(); 
                 var usua = msg[0][dato].usuario;
                 var contrausua = msg[0][dato].contraseña;
+                var nombres = msg[0][dato].nombres;
+                var apellidos = msg[0][dato].apellidos;
+                var email = msg[0][dato].email;
                 
                 if((user === usua)&&(contra === contrausua)){
                     band = 1;                   
                     window.location.href='pagCliente/inicio.html';
+                    $("#minombre").html(nombres);
+                    $("#miusuario").html(usua);
                 }                
             }
             if(band !== 1){
@@ -240,19 +245,22 @@ $(document).ready(function(){
        });
     });
     /*------------------------------Eliminar Usuario--------------------*/
-     $("#btneliminar").click(function(){
-                var usuario=$("#txteliminar").val();                
-                datos={"usuario":usuario};
+    $("#btneliminar").click(function(){
+        var usuario=$("#txteliminar").val();                
+        datos={"usuario":usuario};
 
-               $.ajax({
-                   type:"DELETE",
-                   url:"http://projectoaweb.azurewebsites.net/usuario",
-                   dataType:"text",
-                   contentType:"application/json",
-                   data:JSON.stringify(datos)
-               }).done(function(msg){
-                   alert(msg);
-               });
-            });
+        $.ajax({
+            type:"DELETE",
+            url:"http://projectoaweb.azurewebsites.net/usuario",
+            dataType:"text",
+            contentType:"application/json",
+            data:JSON.stringify(datos)
+        }).done(function(msg){
+            alert(msg);
+        });
+    });
+    /*-----------------------------Datos Perfil-------------------------*/
+    
+    
 });
 

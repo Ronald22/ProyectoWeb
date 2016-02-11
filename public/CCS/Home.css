@@ -368,6 +368,26 @@ margin: 0;
     font-weight: bolder;
 }
 
+#box_registro{
+    position: absolute;
+    background: white;
+    border-radius: 5px;
+    top: 50px;
+    left: 315px;
+    padding: 15px 25px;
+    width: 355px;
+    font-size: 16px;
+}
+
+.registro_correcto{
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.text_registro{
+    margin-top: 0
+}
+
 h1{
     text-align: center;
     padding: 25px 0px 5px;
